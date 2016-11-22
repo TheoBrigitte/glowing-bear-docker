@@ -8,6 +8,6 @@ RUN mkdir /srv/glowing-bear && git clone https://github.com/glowing-bear/glowing
 
 WORKDIR /srv/glowing-bear
 
-CMD ["python","-m","http.server"]
+CMD git pull && python -m http.server
 
 EXPOSE 8000
